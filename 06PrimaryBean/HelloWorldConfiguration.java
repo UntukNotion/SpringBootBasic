@@ -1,20 +1,21 @@
 package com.dyonestrankers.springbasic;
 
 import com.dyonestrankers.springbasic.data.Foo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
-@Slf4j
 @Configuration
 public class HelloWorldConfiguration {
 
-    /**
-    * jika tidak menggunakan @Bean maka tidak dianggap sebagai bean
-    */
+    @Primary
     @Bean
-    public Foo foo() {
-        HelloWorldConfiguration.log.info("Membuat bean Foo");
+    public Foo foo1() {
+        return new Foo();
+    }
+
+    @Bean
+    public Foo foo2() {
         return new Foo();
     }
 
