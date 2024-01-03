@@ -16,7 +16,7 @@ Untuk membuat ApplicationContext menggunakan Annotation, pertama kita bisa perlu
 
 Configuration Class adalah sebuah class yang terdapat annotation @Configuration pada class tersebut
 
-## HelloWorldConfiguration
+## HelloWorldConfiguration.java
 ```java
 package com.dyonestrankers.springbasic;
 
@@ -36,7 +36,7 @@ Selanjutnya, setelah membuat Class Configuration, kita bisa menggunakan class An
 
 [Dokumentasi](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html) 
 
-## ApplicationContextTest
+## ApplicationContextTest.java
 ```java
 package com.dyonestrankers.springbasic;
 
